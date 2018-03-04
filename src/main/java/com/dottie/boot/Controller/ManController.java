@@ -17,6 +17,7 @@ public class ManController {
 
     @GetMapping(value = "girls/{size}")
     public List<GirlEntity> getGirls(@PathVariable("size") String size) {
+        System.out.println("hello world...");
         return manService.findByCupsize(size);
     }
 }
