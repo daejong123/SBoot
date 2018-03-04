@@ -1,0 +1,29 @@
+server:
+  context-path: /bott
+  port: 8989
+
+spring:
+  freemarker:
+      #关闭缓存
+      cache: false
+      request-context-attribute: request
+      #模板加载的位置
+      template-loader-path: classpath:/templates
+      #后缀
+      prefix: /
+      #前缀
+      suffix: .html # 这里默认是ftl
+
+  datasource:
+      driver-class-name: com.mysql.jdbc.Driver
+      username: root
+      password: 123456
+      url: jdbc:mysql://localhost:3306/dbman?characterEncoding=utf-8&useSSL=false
+
+  jpa:
+      show-sql: true
+      hibernate:
+        ddl-auto: update # 自动建表
+
+  jackson:
+      default-property-inclusion: non_null #让vo层的null字段不输出到前端.
