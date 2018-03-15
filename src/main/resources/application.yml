@@ -6,6 +6,7 @@ spring:
   freemarker:
       #关闭缓存
       cache: false
+      ## 这样在模板里面就可以使用 request域对象了。
       request-context-attribute: request
       #模板加载的位置
       template-loader-path: classpath:/templates
@@ -13,8 +14,11 @@ spring:
       prefix: /
       #前缀
       suffix: .html # 这里默认是ftl
+
   resources:
-    static-locations: classpath:/static
+      # 默认static
+      static-locations: classpath:/static
+
 
 
   datasource:
