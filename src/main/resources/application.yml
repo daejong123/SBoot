@@ -13,6 +13,9 @@ spring:
       prefix: /
       #前缀
       suffix: .html # 这里默认是ftl
+  resources:
+    static-locations: classpath:/static
+
 
   datasource:
       driver-class-name: com.mysql.jdbc.Driver
@@ -26,4 +29,5 @@ spring:
         ddl-auto: update # 自动建表
 
   jackson:
-      default-property-inclusion: non_null #让vo层的null字段不输出到前端.
+      default-property-inclusion: non_null
+    #让vo层的null字段不输出到前端.
