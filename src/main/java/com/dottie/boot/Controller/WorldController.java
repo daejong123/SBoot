@@ -9,22 +9,12 @@ public class WorldController {
 
     @GetMapping(value = "/")
     public String index() {
-        return "index";
+        return "welcome";
     }
 
     @GetMapping(value = "/hi")
     public String hello() {
         return "welcome";
-    }
-
-    @GetMapping(value = "/first")
-    public String first() {
-        return "data/first";
-    }
-
-    @GetMapping(value = "/second")
-    public String second() {
-        return "data/second";
     }
 
     @GetMapping(value = "testEx")

@@ -6,7 +6,8 @@ $(function () {
         });
     });
 
-    var local_data = [{id:1, username:"dottie", sex:"male", city:"shanghai", sign:"sgin",experience:"hello",score:100, classify:"code",wealth:"1023"}
+    var local_data = [
+        {id:1, username:"dottie", sex:"male", city:"shanghai", sign:"sgin",experience:"hello",score:100, classify:"code",wealth:"1023"}
         ,{id:2, username:"dottie2", sex:"male", city:"shanghai", sign:"sgin",experience:"hello",score:100, classify:"code",wealth:"1023"}
         ,{id:3, username:"dottie3", sex:"male", city:"shanghai", sign:"sgin",experience:"hello",score:100, classify:"code",wealth:"1023"}
         ,{id:4, username:"dottie4", sex:"male", city:"shanghai", sign:"sgin",experience:"hello",score:100, classify:"code",wealth:"1023"}
